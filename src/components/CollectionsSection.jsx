@@ -8,19 +8,16 @@ export default function CollectionsSection() {
       title: "Women's Edit",
       tagline: "Effortless Silhouettes",
       image: "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&q=80&w=600",
-      link: "/products?category=women"
     },
     {
       title: "Men's Atelier",
       tagline: "Tailored Minimalism",
       image: "https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=80&w=600",
-      link: "/products?category=men"
     },
     {
       title: "Curated Accents",
       tagline: "Timeless Accessories",
       image: "https://images.unsplash.com/photo-1509319117193-57bab727e09d?auto=format&fit=crop&q=80&w=600",
-      link: "/products?category=accessories"
     }
   ];
 
@@ -44,7 +41,7 @@ export default function CollectionsSection() {
           {collections.map((col, idx) => (
             <Link 
               key={idx} 
-              href={col.link} 
+              href={'/products'} 
               className="group relative flex h-[450px] w-full items-end overflow-hidden bg-neutral-950 p-8"
             >
               {/* Background Zoom Image */}
@@ -67,7 +64,9 @@ export default function CollectionsSection() {
                 </h3>
                 
                 <div className="mt-4 flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-white">
-                  <Link href={'/products'}>Shop Now</Link>
+                  <span>
+                  Shop Now
+                  </span>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
                 </div>
               </div>
