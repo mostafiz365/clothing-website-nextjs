@@ -31,10 +31,10 @@ export default function CollectionsSection() {
         
         {/* Section Header */}
         <div className="mb-16 flex flex-col items-center text-center">
-          <span className="text-xs font-bold tracking-[0.3em] uppercase text-neutral-500">
+          <span className="text-sm font-bold tracking-[0.3em] uppercase text-neutral-500">
             Curated Lines
           </span>
-          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-neutral-950 dark:text-white md:text-4xl">
+          <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-neutral-950 dark:text-white md:text-5xl">
             SHOP BY COLLECTION
           </h2>
           <div className="mt-4 h-[2px] w-12 bg-neutral-950 dark:bg-white" />

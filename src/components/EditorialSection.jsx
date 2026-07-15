@@ -48,7 +48,7 @@ export default function EditorialSection() {
             {/* Subtle Line Accent */}
             <div className="mb-6 flex items-center gap-3">
               <span className="h-[2px] w-6 bg-neutral-900 dark:bg-white" />
-              <span className="text-[10px] font-bold tracking-[0.4em] uppercase text-neutral-500">
+              <span className="text-sm font-bold tracking-[0.4em] uppercase text-neutral-500">
                 Art De Vivre
               </span>
             </div>
