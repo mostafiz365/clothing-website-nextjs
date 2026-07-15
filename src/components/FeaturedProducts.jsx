@@ -5,9 +5,7 @@ import { ArrowRight } from "@gravity-ui/icons";
 
 const FeaturedProducts = async () => {
   // প্রোডাক্ট লিস্ট থেকে ডেটা ফেচ করা হচ্ছে
-  const res = await fetch('https://clothing-website-nextjs.vercel.app/data.json', {
-    next: { revalidate: 3600 } // ক্যাশিং অপ্টিমাইজেশন
-  });
+  const res = await fetch('https://clothing-website-nextjs.vercel.app/data.json');
   const products = await res.json();
 
   // slice(2, 5) দিয়ে ইনডেক্স ২, ৩ এবং ৪ (অর্থাৎ ৩য়, ৪র্থ ও ৫ ম প্রোডাক্ট) কেটে নেওয়া হলো

@@ -1,8 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
-import { Button } from "@heroui/react";
 import Link from 'next/link';
 import { ArrowLeft } from '@gravity-ui/icons';
+import ProductActions from '@/components/ProductActions';
 
 const ProductDetailsPage = async ({ params }) => {
   const { id } = await params;
@@ -71,13 +70,13 @@ const ProductDetailsPage = async ({ params }) => {
               <span className="text-xs font-bold tracking-[0.25em] uppercase text-neutral-400">
                 {category}
               </span>
-              <span className={`text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 border ${
+              {/* <span className={`text-[10px] font-bold tracking-widest uppercase px-2.5 py-1 border ${
                 inStock 
                   ? 'border-emerald-500 text-emerald-600' 
                   : 'border-rose-500 text-rose-600'
               }`}>
                 {inStock ? 'In Stock' : 'Out of Stock'}
-              </span>
+              </span> */}
             </div>
 
             {/* Product Title */}
@@ -136,7 +135,7 @@ const ProductDetailsPage = async ({ params }) => {
             )}
 
             {/* Main Action: Add To Cart Button */}
-            <div className="mt-10 border-t border-neutral-100 pt-8">
+            {/* <div className="mt-10 border-t border-neutral-100 pt-8">
               <Button
                 radius="none"
                 size="lg"
@@ -145,7 +144,8 @@ const ProductDetailsPage = async ({ params }) => {
               >
                 Add To Cart
               </Button>
-            </div>
+            </div> */}
+            <ProductActions product={product} />
 
           </div>
 
