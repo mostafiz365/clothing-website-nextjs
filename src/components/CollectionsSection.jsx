@@ -1,4 +1,3 @@
-"use client";
 
 import Link from "next/link";
 import { ArrowRight } from "@gravity-ui/icons";
@@ -37,7 +36,7 @@ export default function CollectionsSection() {
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-neutral-950 dark:text-white md:text-5xl">
             SHOP BY COLLECTION
           </h2>
-          <div className="mt-4 h-[2px] w-12 bg-neutral-950 dark:bg-white" />
+          <div className="mt-4 h-0.5 w-12 bg-neutral-950 dark:bg-white" />
         </div>
 
         {/* 3-Column Image Card Grid */}
@@ -67,9 +66,8 @@ export default function CollectionsSection() {
                   {col.title}
                 </h3>
                 
-                {/* Underline and arrow that appears/extends on hover */}
                 <div className="mt-4 flex items-center gap-2 text-xs font-bold tracking-widest uppercase text-white">
-                  <span>Shop Now</span>
+                  <Link href={'/products'}>Shop Now</Link>
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-2" />
                 </div>
               </div>

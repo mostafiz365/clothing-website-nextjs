@@ -4,32 +4,24 @@ import { ArrowRight } from "@gravity-ui/icons";
 
 
 const FeaturedProducts = async () => {
-  // প্রোডাক্ট লিস্ট থেকে ডেটা ফেচ করা হচ্ছে
   const res = await fetch('https://clothing-website-nextjs.vercel.app/data.json');
   const products = await res.json();
-
-  // slice(2, 5) দিয়ে ইনডেক্স ২, ৩ এবং ৪ (অর্থাৎ ৩য়, ৪র্থ ও ৫ ম প্রোডাক্ট) কেটে নেওয়া হলো
   const featuredProducts = products.slice(2, 5);
 
   return (
-    <section className="min-h-fit !bg-white py-10 text-neutral-900 dark:!bg-white border-t border-neutral-100">
+    <section className="min-h-fit !bg-white py-12 text-neutral-900 dark:!bg-white border-t border-neutral-100">
       <div className="mx-auto max-w-7xl px-6">
         
-        {/* Section Header */}
         <div className="mb-16 flex flex-col items-center text-center">
-          {/* Subtle Tagline */}
           <span className="text-sm font-bold tracking-[0.4em] uppercase text-neutral-400">
             The Editorial Selection
           </span>
-          {/* Main Title */}
           <h2 className="mt-3 text-3xl font-black tracking-tight text-neutral-950 sm:text-5xl uppercase">
             Featured Products
           </h2>
-          {/* Decorative Minimal Line */}
           <div className="mt-4 h-[2px] w-10 bg-neutral-950" />
         </div>
 
-        {/* 3-Column Premium Grid Layout */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-12 sm:grid-cols-2 md:grid-cols-3">
           {
             featuredProducts.map(product => (

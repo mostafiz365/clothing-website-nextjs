@@ -1,9 +1,5 @@
-"use client";
-
 import Link from "next/link";
-import { Button, Input } from "@heroui/react";
 import {
-  Envelope, 
   LogoLinkedin, 
   LogoFacebook, 
   LogoGithub,
@@ -16,11 +12,9 @@ export default function Footer() {
   return (
     <footer className="border-t border-neutral-100 bg-neutral-950 text-neutral-400 dark:border-neutral-900">
       
-      {/* Upper Footer: Newsletter & Brand Brief */}
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-8">
           
-          {/* Column 1: Brand Philosophy (4/12 cols) */}
           <div className="lg:col-span-4">
             <Link href="/" className="flex items-center gap-2 group mb-6">
               <div className="flex h-8 w-8 items-center justify-center rounded bg-white text-black transition-transform group-hover:rotate-12">
@@ -80,7 +74,7 @@ export default function Footer() {
 
       {/* Lower Footer: Copyright & Fine Print */}
       <div className="border-t border-neutral-900 bg-black">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-xs md:flex-row md:px-12 lg:px-24">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-8 text-xs md:flex-row">
           <p className="text-neutral-500">
             &copy; {currentYear} OXIVOS. All rights reserved. Built for professional submission.
           </p>

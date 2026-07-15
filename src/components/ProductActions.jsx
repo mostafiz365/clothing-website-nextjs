@@ -11,7 +11,7 @@ const ProductActions = ({ product }) => {
     <div className="w-full">
       {/* Main Action: Add To Cart Button */}
       <div className="mt-10 border-t border-neutral-100 pt-8">
-        <Button
+            <Button
           radius="none"
           size="lg"
           onClick={() => handleCartBtn(product)}
@@ -19,6 +19,7 @@ const ProductActions = ({ product }) => {
         >
           Add To Cart
         </Button>
+        
       </div>
     </div>
   );
