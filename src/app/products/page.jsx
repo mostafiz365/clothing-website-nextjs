@@ -85,7 +85,7 @@ const ProductPage = () => {
               placeholder="Search by product name..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full"
+              className="w-full border border-gray-400"
             />
           </div>
         
@@ -93,7 +93,7 @@ const ProductPage = () => {
             <select
               value={category}
               onChange={(e) => setCategory(e.target.value)}
-              className="w-full border border-neutral-200 dark:border-neutral-800 px-4 py-3 rounded-xl outline-none appearance-none cursor-pointer text-xs font-bold uppercase tracking-wider bg-white dark:bg-neutral-900"
+              className="w-full border border-neutral-300 dark:border-neutral-800 px-4 py-3 rounded-xl outline-none appearance-none cursor-pointer text-xs font-bold uppercase tracking-wider bg-white dark:bg-neutral-900"
             >
               <option value="">All Categories</option>
               <option value="Hoodie">Hoodies</option>
@@ -110,7 +110,7 @@ const ProductPage = () => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full border border-neutral-200 dark:border-neutral-800 px-4 py-3 rounded-xl outline-none appearance-none cursor-pointer text-xs font-bold uppercase tracking-wider bg-white dark:bg-neutral-900"
+              className="w-full border border-neutral-300 dark:border-neutral-800 px-4 py-3 rounded-xl outline-none appearance-none cursor-pointer text-xs font-bold uppercase tracking-wider bg-white dark:bg-neutral-900"
             >
               <option value="">Default Sort</option>
               <option value="low-to-high">Price: Low to High</option>
