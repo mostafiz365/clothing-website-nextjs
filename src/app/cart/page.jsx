@@ -14,7 +14,7 @@ const CartPage = () => {
   const hasItems = product.length > 0;
 
   return (
-    <main className="min-h-screen bg-white py-12 text-neutral-900">
+    <main className="bg-white py-16 text-neutral-900">
       <div className="mx-auto max-w-7xl px-6">
         
         {/* Page Title */}
